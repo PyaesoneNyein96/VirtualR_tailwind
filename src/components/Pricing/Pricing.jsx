@@ -6,8 +6,8 @@ import { pricingOptions } from '../../constants'
 const Pricing = () => {
     return (
         <div>
-            <div className="mt-20">
-                <h2 className="text-3xl sm:text-3xl lg:text-5xl text-center my-8 tracking-wider">
+            <div className="">
+                <h2 className="text-3xl sm:text-3xl lg:text-5xl text-center mb-8 tracking-wider">
                     Pricing
                 </h2>
                 <div className="flex flex-wrap">
@@ -39,7 +39,7 @@ const Pricing = () => {
                                     </ul>
 
                                     {/* <div className="btn-wrap mt-10   flex justify-center items-center"> */}
-                                    <a href="#" className='inline-flex justify-center items-center w-full h-11 p-5 mt-20 text-center hover:bg-orange-900 rounded-lg border border-orange-900 tracking-tight text-xl transition duration-200'>Subscribe</a>
+                                    <a href="#" className='inline-flex justify-center items-center w-full h-11 p-5 mt-10 text-center hover:bg-orange-900 rounded-lg border border-orange-900 tracking-tight text-xl transition duration-200'>Subscribe</a>
                                     {/* </div> */}
 
                                 </div>
