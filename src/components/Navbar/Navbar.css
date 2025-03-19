@@ -1,4 +1,4 @@
-ul li::after {
+.nav-list li::after {
   content: "";
   width: 0px;
   height: 1px;

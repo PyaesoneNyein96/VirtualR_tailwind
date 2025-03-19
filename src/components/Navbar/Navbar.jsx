@@ -15,13 +15,18 @@ const Navbar = () => {
 
   const location = useLocation();
   const currentRoute = location.pathname;
-  const isHome = currentRoute === "/";
+  // const isHome = currentRoute === "/";
+
+
 
 
   const NavItemsList = () => {
-    return isHome
-      ? navItems.filter(item => item.url !== "/") // Adjust condition
-      : navItems;
+
+    return navItems;
+
+    // return isHome
+    //   ? navItems.filter(item => item.url !== "/") // Adjust condition
+    //   : navItems;
   }
 
   // const NavItems = isHome
@@ -42,9 +47,13 @@ const Navbar = () => {
               </span>
           </div>
           </Link>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-14 space-x-12 nav-list">
             {NavItemsList().map((item, i) => (
-              <li key={i}>
+              <li
+                key={i}
+                className={`transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden ${item.url === currentRoute ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
+                  }`}
+              >
                 <Link to={item.url}>
                   {item.label}
                 </Link> 

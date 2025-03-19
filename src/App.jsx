@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import FeatureSection from "./components/Features/FeatureSection";
 import Footer from "./components/Footer/Footer";
 import Workflow from "./components/Workflow/Workflow";
+import Pricing from "./components/Pricing/Pricing";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/features" element={<FeatureSection />} />
             <Route path="/workflow" element={<Workflow />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
       </div>
         <Footer />
