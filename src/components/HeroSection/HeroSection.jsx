@@ -1,10 +1,10 @@
 import React from "react";
-import Video1 from "../../assets/video1.mp4";
-import Video2 from "../../assets/video2.mp4";
+import Video1 from "../../assets/videos/video1.mp4";
+import Video2 from "../../assets/videos/video2.mp4";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="flex flex-col items-center mt-6 lg:mt-20 lg:mb-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         VirtualR build tools
         <span className="bg-gradient-to-r from-orange-500 to-red-900 bg-clip-text text-transparent">
@@ -21,7 +21,7 @@ const HeroSection = () => {
             href="#"
             className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 rounded-md mx-3"
           >
-            Start Free Trail
+            Start Free
           </a>
 
           <a href="" className="py-3 px-4 mx-3 rounded-md border">
