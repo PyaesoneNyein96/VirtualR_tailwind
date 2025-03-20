@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const location = useLocation();
   const currentRoute = location.pathname;
-  // const isHome = currentRoute === "/";
+
 
 
 
@@ -50,8 +50,8 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12 nav-list">
             {NavItemsList().map((item, i) => (
               <li
-                key={i}
-                className={`transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden ${item.url === currentRoute ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
+                key={i} style={currentRoute === item.url ? { 'color': 'orange' } : {}}
+                className={`transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden ${(item.url === "/" && currentRoute === "/") ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
                   }`}
               >
                 <Link to={item.url}>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 Sign In
               </a>
               <a
-                href=""
+                href="#"
                 className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-5 rounded-md"
               >
                 Create Account

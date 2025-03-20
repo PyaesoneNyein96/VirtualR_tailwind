@@ -7,6 +7,7 @@ import FeatureSection from "./components/Features/FeatureSection";
 import Footer from "./components/Footer/Footer";
 import Workflow from "./components/Workflow/Workflow";
 import Pricing from "./components/Pricing/Pricing";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/features" element={<FeatureSection />} />
             <Route path="/workflow" element={<Workflow />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/testimonials" element={<Testimonials />} />
           </Routes>
       </div>
         <Footer />

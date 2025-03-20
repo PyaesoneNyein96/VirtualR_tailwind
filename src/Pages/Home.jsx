@@ -3,6 +3,8 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import FeatureSection from '../components/Features/FeatureSection'
 import Workflow from '../components/Workflow/Workflow'
 import Pricing from '../components/Pricing/Pricing'
+import Testimonials from '../components/Testimonials/Testimonials'
+import Footer from '../components/Footer/Footer'
 
 
 
@@ -15,6 +17,7 @@ const Home = () => {
             <FeatureSection />
             <Workflow />
             <Pricing />
+            <Testimonials />
         </>
     )
 

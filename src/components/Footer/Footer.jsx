@@ -1,39 +1,56 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { resourcesLinks, platformLinks, communityLinks } from '../../constants'
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white mt-20 py-6">
-            <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <footer className='container px-6  mx-auto mt-20 border-t py-10 border-neutral-800'>
 
-                {/* Column 1 - Company Info */}
-                <div>
-                    <h2 className="text-xl font-semibold text-orange-500">About Us</h2>
-                    <p className="text-sm mt-2">
-                        We provide high-quality services with a focus on customer satisfaction.
-                    </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 text-center sm:text-center md:text-left">
+                <div className="">
+
+                    <h3 className='text-md font-semibold mb-4'>Resources</h3>
+                    <ul className='space-y-2'>
+                        {resourcesLinks.map((link, i) => (
+                            <li key={i}>
+                                <a href={link.href} className='text-neutral-400 hover:text-white transition'>
+                                    {link.text}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
+                {/*  */}
 
-                {/* Column 2 - Quick Links */}
-                <div>
-                    <h2 className="text-xl font-semibold text-orange-500">Quick Links</h2>
-                    <ul className="mt-2 space-y-2">
-                        <li><a href="#" className="hover:text-orange-400 transition">Home</a></li>
-                        <li><a href="#" className="hover:text-orange-400 transition">Services</a></li>
-                        <li><a href="#" className="hover:text-orange-400 transition">Blog</a></li>
-                        <li><a href="#" className="hover:text-orange-400 transition">Contact</a></li>
+                <div className="">
+
+                    <h3 className='text-md font-semibold mb-4'>Platform</h3>
+                    <ul className='space-y-2'>
+                        {communityLinks.map((link, i) => (
+                            <li key={i}>
+                                <a href={link.href} className='text-neutral-400 hover:text-white transition'>
+                                    {link.text}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
-                {/* Column 3 - Contact Info */}
-                <div>
-                    <h2 className="text-xl font-semibold text-orange-500">Contact</h2>
-                    <ul className="mt-2 space-y-2">
-                        <li>Email: contact@example.com</li>
-                        <li>Phone: +123 456 789</li>
-                        <li>Location: 123 Street, City</li>
+                {/*  */}
+
+                <div className="">
+
+                    <h3 className='text-md font-semibold mb-4'>Community</h3>
+                    <ul className='space-y-2'>
+                        {platformLinks.map((link, i) => (
+                            <li key={i}>
+                                <a href={link.href} className='text-neutral-400 hover:text-white transition'>
+                                    {link.text}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
+
 
             </div>
 
@@ -41,10 +58,9 @@ const Footer = () => {
             <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm">
                 © {new Date().getFullYear()} VirtualR. All rights reserved.
             </div>
+
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
-
-
+export default Footer

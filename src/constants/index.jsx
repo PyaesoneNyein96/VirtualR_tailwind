@@ -14,10 +14,10 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
   { label: "Home", href: "#", url: "/" },
-  { label: "Features", href: "#features", url: "features" },
-  { label: "Workflow", href: "#", url: "workflow" },
-  { label: "Pricing", href: "#", url: "pricing" },
-  { label: "Testimonials", href: "#", url: "testimonials" },
+  { label: "Features", href: "#features", url: "/features" },
+  { label: "Workflow", href: "#", url: "/workflow" },
+  { label: "Pricing", href: "#", url: "/pricing" },
+  { label: "Testimonials", href: "#", url: "/testimonials" },
 ];
 
 export const testimonials = [
@@ -153,6 +153,9 @@ export const pricingOptions = [
     ],
   },
 ];
+
+
+// Footer ---
 
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },
