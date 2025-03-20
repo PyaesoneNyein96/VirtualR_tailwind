@@ -6,7 +6,7 @@ import { pricingOptions } from '../../constants'
 const Pricing = () => {
     return (
         <div>
-            <div className="mb-40">
+            <div className="mb-40 pt-20 md:pt-0" id='pricing'>
                 <h2 className="text-3xl sm:text-3xl lg:text-5xl text-center mb-8 tracking-wider">
                     Pricing
                 </h2>

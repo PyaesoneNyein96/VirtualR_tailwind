@@ -12,3 +12,7 @@
 body{
   min-height: 110vh;
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="nav sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <div id="navId" className="nav sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <Link to={"/"}>
@@ -78,6 +78,8 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+
         {/* mobile menu  */}
 
         {mobileView && (
@@ -86,7 +88,7 @@ const Navbar = () => {
             <ul>
               {NavItemsList().map((ni, k) => (
                 <li key={k} className="py-2 text-white nav-item">
-                  <a href={ni.href}>{ni.label}</a>
+                  <a href={ni.href} onClick={toggleNavbar}>{ni.label}</a>
                 </li>
               ))}
             </ul>
